@@ -1,0 +1,4 @@
+baseURL: "https://elwali10.github.io/elwalikarkoub/" 
+languageCode: en-us
+title: My New Hugo Site
+theme: PaperMod
