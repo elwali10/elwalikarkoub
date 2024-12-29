@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Docs on My New Hugo Site</title>
-    <link>https://elwalikarkoub.com/docs/</link>
+    <link>https://elwalikarkoub.com/elwalikarkoub/docs/</link>
     <description>Recent content in Docs on My New Hugo Site</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 17:12:18 +0000</lastBuildDate>
-    <atom:link href="https://elwalikarkoub.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elwalikarkoub.com/elwalikarkoub/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>https://elwalikarkoub.com/docs/test/</link>
+      <link>https://elwalikarkoub.com/elwalikarkoub/docs/test/</link>
       <pubDate>Sat, 28 Dec 2024 17:12:18 +0000</pubDate>
-      <guid>https://elwalikarkoub.com/docs/test/</guid>
+      <guid>https://elwalikarkoub.com/elwalikarkoub/docs/test/</guid>
       <description>&lt;p&gt;##This is a test page&lt;/p&gt;</description>
     </item>
   </channel>
