@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://elwalikarkoub.com/elwalikarkoub/docs/</loc>
+    <loc>/docs/</loc>
     <lastmod>2024-12-28T17:12:18+00:00</lastmod>
   </url><url>
-    <loc>https://elwalikarkoub.com/elwalikarkoub/</loc>
+    <loc>/</loc>
     <lastmod>2024-12-28T17:12:18+00:00</lastmod>
   </url><url>
-    <loc>https://elwalikarkoub.com/elwalikarkoub/docs/test/</loc>
+    <loc>/docs/test/</loc>
     <lastmod>2024-12-28T17:12:18+00:00</lastmod>
   </url><url>
-    <loc>https://elwalikarkoub.com/elwalikarkoub/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://elwalikarkoub.com/elwalikarkoub/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
