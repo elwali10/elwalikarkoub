@@ -8,7 +8,7 @@ tags:
 - Linux
 ---
 
-I have had situations where I needed to check teh connectivity using telnet but the server did not have it installed not it could be a possiblity to do so. Founded that it can be only using curl:
+I have had situations where I needed to check the connectivity using telnet but the server did not have it installed nor the possiblity to do so. I've found that it can be achieved using only curl:
 
 `curl -vv telnet://serverIP:port` 
 
