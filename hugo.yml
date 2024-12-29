@@ -1,5 +1,4 @@
-#baseURL: "https://elwali10.github.io/elwalikarkoub/" 
-baseURL: "https://elwalikarkoub.com/elwalikarkoub/" 
+baseURL: "/" 
 languageCode: en-us
 title: My New Hugo Site
 theme: PaperMod
