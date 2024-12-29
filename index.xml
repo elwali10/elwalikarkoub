@@ -13,7 +13,7 @@
       <link>/docs/curlconnectivity/</link>
       <pubDate>Sat, 28 Dec 2024 17:12:18 +0000</pubDate>
       <guid>/docs/curlconnectivity/</guid>
-      <description>&lt;p&gt;I have had situations where I needed to check teh connectivity using telnet but the server did not have it installed not it could be a possiblity to do so. Founded that it can be only using curl:&lt;/p&gt;
+      <description>&lt;p&gt;I have had situations where I needed to check the connectivity using telnet but the server did not have it installed nor the possiblity to do so. I&amp;rsquo;ve found that it can be achieved using only curl:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;curl -vv telnet://serverIP:port&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This will use the telnet portocol instead of the known http(s).&lt;/p&gt;
 &lt;p&gt;curl support about 28 protocols that you can find here: &lt;a href=&#34;https://everything.curl.dev/protocols/curl.html&#34;&gt;https://everything.curl.dev/protocols/curl.html&lt;/a&gt;&lt;/p&gt;</description>
