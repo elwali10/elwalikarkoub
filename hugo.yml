@@ -1,4 +1,44 @@
 baseURL: "/" 
 languageCode: en-us
-title: My New Hugo Site
+title: Elwali Karkoub
 theme: PaperMod
+
+enableEmoji: true
+
+params:
+  author: Elwali Karkoub
+  homeInfoParams:
+    Title: "Opensource Security & Cloud"
+    Content: >
+      Welcome to my website, I am Wali, a security engineering/Aiming to transition to cloud/Devops :D.
+
+      - This space to share my thoughts & learning about all technical topics such as Wazuh, Elastic stack (ELK), Opensearch, K8s, AWS & Linux 🙂
+
+      - Simply, I love to share everything and anything I learn as I believe that sharing more leads to learning more.
+
+
+  socialIcons:
+    - name: Github
+      url: "https://github.com/elwali10"
+    - name: Youtube
+      url: "https://www.youtube.com/@elwalikarkoub378"
+    - name: Rss
+      url: "index.xml"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
