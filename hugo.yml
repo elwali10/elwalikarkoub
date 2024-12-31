@@ -10,7 +10,7 @@ params:
   homeInfoParams:
     Title: "Opensource Security & Cloud"
     Content: >
-      Welcome to my website, I am Wali, a security engineering/Aiming to transition to cloud/Devops :D.
+      Welcome to my website, I am Wali, a security engineer aiming to transition to be more focused on cloud/Devsecops  :D.
 
       - This space to share my thoughts & learning about all technical topics such as Wazuh, Elastic stack (ELK), Opensearch, K8s, AWS & Linux 🙂
 
@@ -22,6 +22,10 @@ params:
       url: "https://github.com/elwali10"
     - name: Youtube
       url: "https://www.youtube.com/@elwalikarkoub378"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/elwali-karkoub/"
+    - name: Twitter
+      url: "https://x.com/ElwaliKarkoub"
     - name: Rss
       url: "index.xml"
 
@@ -38,7 +42,7 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
-    - identifier: archives
-      name: Archives
-      url: /archives/
-      weight: 30
+        #    - identifier: archives
+        #name: Archives
+        #url: /archives/
+        #weight: 30
