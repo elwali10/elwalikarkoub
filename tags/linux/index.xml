@@ -6,8 +6,22 @@
     <description>Recent content in Linux on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 17:12:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2025 22:22:38 +0000</lastBuildDate>
     <atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bluetooth Keyboard keeps dropping out connection</title>
+      <link>/docs/bluetoothkeyboarddisconnecting/</link>
+      <pubDate>Sun, 05 Jan 2025 22:22:38 +0000</pubDate>
+      <guid>/docs/bluetoothkeyboarddisconnecting/</guid>
+      <description>&lt;p&gt;For no specific reason I can tell my bluetooth keyboard SUBBLIM dropped the connection on my linux mint 21 machine. Bluetooth logs shows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; bluetoothd[1109]: profiles/input/hog-lib.c:report_reference_cb() Read Report Reference descriptor failed: Request attribute has encountered an unlikely error
+ bluetoothd[1109]: profiles/input/hog-lib.c:info_read_cb() HID Information read failed: Request attribute has encountered an unlikely error
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I procedded to solve it as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Install sudo apt-get install blueman
+
+load module modprobe btusb 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removed the bluetooth device from the UI or you can use the command &lt;code&gt;bluetoothctl remove 54:46:6E:2F:15:5B&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Check connectivity using only CURL</title>
       <link>/docs/curlconnectivity/</link>

@@ -145,6 +145,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Bluetooth Keyboard keeps dropping out connection
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>For no specific reason I can tell my bluetooth keyboard SUBBLIM dropped the connection on my linux mint 21 machine. Bluetooth logs shows:
+bluetoothd[1109]: profiles/input/hog-lib.c:report_reference_cb() Read Report Reference descriptor failed: Request attribute has encountered an unlikely error bluetoothd[1109]: profiles/input/hog-lib.c:info_read_cb() HID Information read failed: Request attribute has encountered an unlikely error I procedded to solve it as follows:
+Install sudo apt-get install blueman load module modprobe btusb Removed the bluetooth device from the UI or you can use the command bluetoothctl remove 54:46:6E:2F:15:5B
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-05 22:22:38 +0000 UTC'>January 5, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to Bluetooth Keyboard keeps dropping out connection" href="/docs/bluetoothkeyboarddisconnecting/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Check connectivity using only CURL
     </h2>
   </header>
@@ -161,7 +176,7 @@ curl support about 28 protocols that you can find here: https://everything.curl.
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="/">Elwali Karkoub</a></span> · 
+        <span>&copy; 2025 <a href="/">Elwali Karkoub</a></span> · 
 
     <span>
         <a href="https://x.com/ElwaliKarkoub" rel="noopener noreferrer" target="_blank">Twitter</a> -
