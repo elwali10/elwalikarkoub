@@ -8,6 +8,8 @@ enableEmoji: true
 params:
   env: production 
   author: Elwali Karkoub
+  assets:
+    favicon: "/assets/favicon.svg"
   homeInfoParams:
     Title: "Opensource Security & Cloud"
     Content: >
