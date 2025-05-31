@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AWS on Elwali Karkoub</title>
+    <link>//localhost:1313/tags/aws/</link>
+    <description>Recent content in AWS on Elwali Karkoub</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Feb 2025 17:10:55 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS cloudtrail network VPC endpoint activity: Monitor and Detect Data exfiltration from EC2 private subnet to S3 VPC Endpoint</title>
+      <link>//localhost:1313/docs/monitorawsvpcendpoints/</link>
+      <pubDate>Sun, 23 Feb 2025 17:10:55 +0000</pubDate>
+      <guid>//localhost:1313/docs/monitorawsvpcendpoints/</guid>
+      <description>&lt;p&gt;Recently, AWS released the possiblity to record through cloudtrail and monitor the API activity traversing the VPC endpoints allowing to detect potential data exfiltration attempts and unauthorized access to the resources within your network; &lt;a href=&#34;https://aws.amazon.com/es/blogs/aws/aws-cloudtrail-network-activity-events-for-vpc-endpoints-now-generally-available/&#34;&gt;AWS Blog Announce&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have came accross this &lt;a href=&#34;https://github.com/adanalvarez/terraform-sandbox/tree/main/cloudtrail-network-activity-events-for-vpc-endpoints&#34;&gt;github Repo&lt;/a&gt; from Adan Alavarez Vilchez (Kudos to him) which provides a terraform configuration allows deploying to o test the new CloudTrail network activity events feature for VPC endpoints.&lt;/p&gt;
+&lt;p&gt;In this blog, I will go through deploying the testing envirnoment via terraform and generate logs mimcking and data exfiltration by copying data from the EC2 located in the private subnet to an S3 bucket controled by the attacked, then configure Wazuh for the detection part.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
