@@ -7,8 +7,8 @@
 <meta name="robots" content="index, follow">
 <title>Turning my Linux Mint Laptop into A server: Systemd targets &amp; logind | Elwali Karkoub</title>
 <meta name="keywords" content="Linux, Home Lab, Systemd">
-<meta name="description" content="I have been tinkering lately to build a home lab (K8s, Wazuh &hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop&rsquo;s lid while maintaining it running.
-For the first issue, I was able to solve by running the following then reboot:">
+<meta name="description" content="I have been tinkering lately to build a home lab (K8s, Wazuh &hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop&rsquo;s lid while keeping it running.
+For the first issue, I was able to solve it by running the following and then reboot:">
 <meta name="author" content="Elwali Karkoub">
 <link rel="canonical" href="//localhost:1313/docs/linuxlaptopintoserverandclosethelid/">
 <meta name="google-site-verification" content="G-6J8BPZMRPP">
@@ -60,8 +60,8 @@ For the first issue, I was able to solve by running the following then reboot:">
 </noscript><meta property="og:url" content="//localhost:1313/docs/linuxlaptopintoserverandclosethelid/">
   <meta property="og:site_name" content="Elwali Karkoub">
   <meta property="og:title" content="Turning my Linux Mint Laptop into A server: Systemd targets & logind">
-  <meta property="og:description" content="I have been tinkering lately to build a home lab (K8s, Wazuh …) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop’s lid while maintaining it running.
-For the first issue, I was able to solve by running the following then reboot:">
+  <meta property="og:description" content="I have been tinkering lately to build a home lab (K8s, Wazuh …) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop’s lid while keeping it running.
+For the first issue, I was able to solve it by running the following and then reboot:">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -72,8 +72,8 @@ For the first issue, I was able to solve by running the following then reboot:">
     <meta property="article:tag" content="Systemd">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Turning my Linux Mint Laptop into A server: Systemd targets &amp; logind">
-<meta name="twitter:description" content="I have been tinkering lately to build a home lab (K8s, Wazuh &hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop&rsquo;s lid while maintaining it running.
-For the first issue, I was able to solve by running the following then reboot:">
+<meta name="twitter:description" content="I have been tinkering lately to build a home lab (K8s, Wazuh &hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop&rsquo;s lid while keeping it running.
+For the first issue, I was able to solve it by running the following and then reboot:">
 
 
 <script type="application/ld+json">
@@ -102,12 +102,12 @@ For the first issue, I was able to solve by running the following then reboot:">
   "@type": "BlogPosting",
   "headline": "Turning my Linux Mint Laptop into A server: Systemd targets \u0026 logind",
   "name": "Turning my Linux Mint Laptop into A server: Systemd targets \u0026 logind",
-  "description": "I have been tinkering lately to build a home lab (K8s, Wazuh \u0026hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop\u0026rsquo;s lid while maintaining it running.\nFor the first issue, I was able to solve by running the following then reboot:\n",
+  "description": "I have been tinkering lately to build a home lab (K8s, Wazuh \u0026hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop\u0026rsquo;s lid while keeping it running.\nFor the first issue, I was able to solve it by running the following and then reboot:\n",
   "keywords": [
     "Linux", "Home Lab", "Systemd"
   ],
-  "articleBody": "I have been tinkering lately to build a home lab (K8s, Wazuh …) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop’s lid while maintaining it running.\nFor the first issue, I was able to solve by running the following then reboot:\nsudo systemctl set-default multi-user.target sudo reboot That where I came through the notion of systemd targets that was introduced to replace traditional runlevels in SysVinit systems.\nmulti-user.target → Boots into a multi-user text-based environment without a graphical interface.\ngraphical.target (Default mode) → Boots into a multi-user environment with a graphical interface (GUI enabled).\nIf for any reason, I need to switch back to GUI mode, running sudo systemctl set-default graphical.target then reboot should do it.\nAnd to keep the laptop “server” running with the lid closed, I performed the following:\nEdit the logind configuration file /etc/systemd/logind.conf to set the below option to ignore: HandleLidSwitch=ignore HandleLidSwitchExternalPower=ignore HandleLidSwitchDocked=ignore Save then apply the changes by running sudo systemctl restart systemd-logind ",
-  "wordCount" : "190",
+  "articleBody": "I have been tinkering lately to build a home lab (K8s, Wazuh …) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop’s lid while keeping it running.\nFor the first issue, I was able to solve it by running the following and then reboot:\nsudo systemctl set-default multi-user.target sudo reboot That is where I came across the notion of systemd targets that was introduced to replace traditional runlevels in SysVinit systems.\nmulti-user.target → Boots into a multi-user text-based environment without a graphical interface.\ngraphical.target (Default mode) → Boots into a multi-user environment with a graphical interface (GUI enabled).\nIf for any reason, I need to switch back to GUI mode, running sudo systemctl set-default graphical.target then reboot should do it.\nAnd to keep the laptop “server” running with the lid closed, I performed the following:\nEdit the logind configuration file /etc/systemd/logind.conf to set the below option to ignore: HandleLidSwitch=ignore HandleLidSwitchExternalPower=ignore HandleLidSwitchDocked=ignore Save then apply the changes by running sudo systemctl restart systemd-logind ",
+  "wordCount" : "194",
   "inLanguage": "en",
   "datePublished": "2025-02-08T17:51:03Z",
   "dateModified": "2025-02-08T17:51:03Z",
@@ -196,12 +196,12 @@ For the first issue, I was able to solve by running the following then reboot:">
 
 </div>
   </header> 
-  <div class="post-content"><p>I have been tinkering lately to build a home lab (K8s, Wazuh &hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop&rsquo;s lid while maintaining it running.</p>
-<p>For the first issue, I was able to solve by running the following then reboot:</p>
+  <div class="post-content"><p>I have been tinkering lately to build a home lab (K8s, Wazuh &hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop&rsquo;s lid while keeping it running.</p>
+<p>For the first issue, I was able to solve it by running the following and then reboot:</p>
 <pre tabindex="0"><code>sudo systemctl set-default multi-user.target
 
 sudo reboot
-</code></pre><p>That where I came through the notion of systemd targets that was introduced to replace traditional runlevels in SysVinit systems.</p>
+</code></pre><p>That is where I came across the notion of systemd targets that was introduced to replace traditional runlevels in SysVinit systems.</p>
 <ul>
 <li>
 <p>multi-user.target → Boots into a multi-user text-based environment without a graphical interface.</p>

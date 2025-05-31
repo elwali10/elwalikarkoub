@@ -13,8 +13,8 @@
       <link>//localhost:1313/docs/linuxlaptopintoserverandclosethelid/</link>
       <pubDate>Sat, 08 Feb 2025 17:51:03 +0000</pubDate>
       <guid>//localhost:1313/docs/linuxlaptopintoserverandclosethelid/</guid>
-      <description>&lt;p&gt;I have been tinkering lately to build a home lab (K8s, Wazuh &amp;hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (session immediately closed after connecting) also I needed to be able to close the laptop&amp;rsquo;s lid while maintaining it running.&lt;/p&gt;
-&lt;p&gt;For the first issue, I was able to solve by running the following then reboot:&lt;/p&gt;</description>
+      <description>&lt;p&gt;I have been tinkering lately to build a home lab (K8s, Wazuh &amp;hellip;) and wanted to turn my old laptop (Running Linux Mint 21) into a server. While going through that process I had issues with configuring RDP (The session immediately closed after connecting) also I needed to be able to close the laptop&amp;rsquo;s lid while keeping it running.&lt;/p&gt;
+&lt;p&gt;For the first issue, I was able to solve it by running the following and then reboot:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
