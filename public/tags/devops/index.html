@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tags | Elwali Karkoub</title>
+<title>Devops | Elwali Karkoub</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Elwali Karkoub">
-<link rel="canonical" href="//localhost:1313/tags/">
+<link rel="canonical" href="//localhost:1313/tags/devops/">
 <meta name="google-site-verification" content="G-6J8BPZMRPP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/assets/favicon.svg">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/index.xml">
-<link rel="alternate" hreflang="en" href="//localhost:1313/tags/">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/devops/index.xml">
+<link rel="alternate" hreflang="en" href="//localhost:1313/tags/devops/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,13 +57,13 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="//localhost:1313/tags/">
+</noscript><meta property="og:url" content="//localhost:1313/tags/devops/">
   <meta property="og:site_name" content="Elwali Karkoub">
-  <meta property="og:title" content="Tags">
+  <meta property="og:title" content="Devops">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tags">
+<meta name="twitter:title" content="Devops">
 <meta name="twitter:description" content="">
 
 </head>
@@ -115,40 +115,37 @@
             </li>
             <li>
                 <a href="//localhost:1313/tags/" title="Tags">
-                    <span class="active">Tags</span>
+                    <span>Tags</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="main">
+<main class="main"> 
 <header class="page-header">
-    <h1>Tags</h1>
+  <h1>
+    Devops
+  </h1>
 </header>
 
-<ul class="terms-tags">
-    <li>
-        <a href="//localhost:1313/tags/command-line/">Command-Line <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="//localhost:1313/tags/devops/">Devops <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="//localhost:1313/tags/docker/">Docker <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="//localhost:1313/tags/home-lab/">Home Lab <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="//localhost:1313/tags/linux/">Linux <sup><strong><sup>4</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="//localhost:1313/tags/network/">Network <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="//localhost:1313/tags/systemd/">Systemd <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Essential Docker Commands Cheat Sheet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Docker commands I use regularly:
+1. Complete Environment Cleanup docker-compose down --remove-orphans -v --rmi all --remove-orphans: Deletes containers for services not in compose file
+-v: Removes attached volumes
+--rmi all: Deletes all images used by services
+2. Run Image with Interactive Shell docker run -it --entrypoint bash wazuh/wazuh-certs-generator:0.0.1 docker run -it --entrypoint bash ubuntu:focal -it: Interactive terminal
+--entrypoint bash: Overrides default to give shell access
+3. Find Container IP Address docker inspect -f &#39;{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39; $(docker ps | grep -i dashboard | awk &#39;{print $1}&#39;) docker ps | grep -i dashboard: Finds container with “dashboard” in name
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-07 18:35:36 +0100 WEST'>June 7, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to My Essential Docker Commands Cheat Sheet" href="//localhost:1313/docs/usefuldockercommands/"></a>
+</article>
     </main>
     
 <footer class="footer">

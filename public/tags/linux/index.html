@@ -130,6 +130,25 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">My Essential Docker Commands Cheat Sheet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Docker commands I use regularly:
+1. Complete Environment Cleanup docker-compose down --remove-orphans -v --rmi all --remove-orphans: Deletes containers for services not in compose file
+-v: Removes attached volumes
+--rmi all: Deletes all images used by services
+2. Run Image with Interactive Shell docker run -it --entrypoint bash wazuh/wazuh-certs-generator:0.0.1 docker run -it --entrypoint bash ubuntu:focal -it: Interactive terminal
+--entrypoint bash: Overrides default to give shell access
+3. Find Container IP Address docker inspect -f &#39;{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39; $(docker ps | grep -i dashboard | awk &#39;{print $1}&#39;) docker ps | grep -i dashboard: Finds container with “dashboard” in name
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-07 18:35:36 +0100 WEST'>June 7, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to My Essential Docker Commands Cheat Sheet" href="//localhost:1313/docs/usefuldockercommands/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Turning my Linux Mint Laptop into A server: Systemd targets &amp; logind
     </h2>
   </header>
