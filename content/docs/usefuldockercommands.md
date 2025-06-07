@@ -2,6 +2,8 @@
 date: '2025-06-07T18:35:36+01:00'
 draft: false
 title: 'My Essential Docker Commands Cheat Sheet'
+categories:
+  - DevOps
 tags:
   - Docker
   - Devops

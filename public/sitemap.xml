@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2025-06-07T18:35:36+01:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/devops/</loc>
+    <lastmod>2025-06-07T18:35:36+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/devops/</loc>
     <lastmod>2025-06-07T18:35:36+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/docker/</loc>
@@ -43,7 +49,5 @@
   </url><url>
     <loc>//localhost:1313/tags/network/</loc>
     <lastmod>2024-12-28T17:12:18+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>

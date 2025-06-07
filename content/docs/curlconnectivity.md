@@ -2,6 +2,8 @@
 date: '2024-12-28T17:12:18Z'
 draft: false
 title: 'Check connectivity using only CURL'
+categories:
+ - DevOps
 tags: 
 - Command-Line
 - Network
