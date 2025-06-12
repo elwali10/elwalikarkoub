@@ -17,10 +17,10 @@
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; bluetoothd[1109]: profiles/input/hog-lib.c:report_reference_cb() Read Report Reference descriptor failed: Request attribute has encountered an unlikely error
  bluetoothd[1109]: profiles/input/hog-lib.c:info_read_cb() HID Information read failed: Request attribute has encountered an unlikely error
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I procedded to solve it as follows:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Install sudo apt-get install blueman
-
-load module modprobe btusb 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removed the bluetooth device from the UI or you can use the command &lt;code&gt;bluetoothctl remove 54:46:6E:2F:15:5B&lt;/code&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Install sudo apt-get install blueman
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;load module modprobe btusb 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Removed the bluetooth device from the UI or you can use the command &lt;code&gt;bluetoothctl remove 54:46:6E:2F:15:5B&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Check connectivity using only CURL</title>
