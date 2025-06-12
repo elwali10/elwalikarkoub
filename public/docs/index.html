@@ -145,6 +145,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Wazuh Upgrade Permissions Fix
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Updating Wazuh Manager Permissions After Failed Upgrade If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.
+Permission Update Commands Run these commands to correct ownership:
+# Change ossec user/group to wazuh find /var/ossec -group ossec -user ossec -exec chown wazuh:wazuh {} \; # Change root-owned files to wazuh group find /var/ossec -group ossec -user root -exec chown root:wazuh {} \; Notes: These commands recursively update ownership in the Wazuh directory
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-12 23:56:46 +0100 WEST'>June 12, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to Wazuh Upgrade Permissions Fix" href="//localhost:1313/docs/wazuh-upgrade-permissions-fix/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Running PowerShell Commands on a Wodle Wazuh
     </h2>
   </header>

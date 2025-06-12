@@ -6,8 +6,27 @@
     <description>Recent content in Linux on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Jun 2025 18:35:36 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 23:56:46 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wazuh Upgrade Permissions Fix</title>
+      <link>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</link>
+      <pubDate>Thu, 12 Jun 2025 23:56:46 +0100</pubDate>
+      <guid>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</guid>
+      <description>&lt;h1 id=&#34;updating-wazuh-manager-permissions-after-failed-upgrade&#34;&gt;Updating Wazuh Manager Permissions After Failed Upgrade&lt;/h1&gt;
+&lt;p&gt;If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.&lt;/p&gt;
+&lt;h2 id=&#34;permission-update-commands&#34;&gt;Permission Update Commands&lt;/h2&gt;
+&lt;p&gt;Run these commands to correct ownership:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change ossec user/group to wazuh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find /var/ossec -group ossec -user ossec -exec chown wazuh:wazuh &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change root-owned files to wazuh group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find /var/ossec -group ossec -user root -exec chown root:wazuh &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;notes&#34;&gt;Notes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;These commands recursively update ownership in the Wazuh directory&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My Essential Docker Commands Cheat Sheet</title>
       <link>//localhost:1313/docs/usefuldockercommands/</link>
@@ -28,10 +47,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2-run-image-with-interactive-shell&#34;&gt;2. Run Image with Interactive Shell&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -it --entrypoint bash wazuh/wazuh-certs-generator:0.0.1
-
-docker run -it --entrypoint bash ubuntu:focal
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -it --entrypoint bash wazuh/wazuh-certs-generator:0.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -it --entrypoint bash ubuntu:focal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;-it&lt;/code&gt;: Interactive terminal&lt;/p&gt;
 &lt;/li&gt;
@@ -40,8 +59,8 @@ docker run -it --entrypoint bash ubuntu:focal
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3-find-container-ip-address&#34;&gt;3. Find Container IP Address&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker inspect -f &amp;#39;{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;#39; $(docker ps | grep -i dashboard | awk &amp;#39;{print $1}&amp;#39;)
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;docker ps | grep -i dashboard | awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $1}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;docker ps | grep -i dashboard&lt;/code&gt;: Finds container with &amp;ldquo;dashboard&amp;rdquo; in name&lt;/p&gt;</description>
     </item>
@@ -62,10 +81,10 @@ docker run -it --entrypoint bash ubuntu:focal
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; bluetoothd[1109]: profiles/input/hog-lib.c:report_reference_cb() Read Report Reference descriptor failed: Request attribute has encountered an unlikely error
  bluetoothd[1109]: profiles/input/hog-lib.c:info_read_cb() HID Information read failed: Request attribute has encountered an unlikely error
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I procedded to solve it as follows:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Install sudo apt-get install blueman
-
-load module modprobe btusb 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Removed the bluetooth device from the UI or you can use the command &lt;code&gt;bluetoothctl remove 54:46:6E:2F:15:5B&lt;/code&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Install sudo apt-get install blueman
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;load module modprobe btusb 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Removed the bluetooth device from the UI or you can use the command &lt;code&gt;bluetoothctl remove 54:46:6E:2F:15:5B&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Check connectivity using only CURL</title>

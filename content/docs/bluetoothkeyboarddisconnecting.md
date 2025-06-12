@@ -16,7 +16,7 @@ For no specific reason I can tell my bluetooth keyboard SUBBLIM dropped the conn
 
 I procedded to solve it as follows: 
 
-```
+```xml
 Install sudo apt-get install blueman
 
 load module modprobe btusb 

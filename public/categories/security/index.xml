@@ -6,8 +6,27 @@
     <description>Recent content in Security on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 23:09:38 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 23:56:46 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wazuh Upgrade Permissions Fix</title>
+      <link>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</link>
+      <pubDate>Thu, 12 Jun 2025 23:56:46 +0100</pubDate>
+      <guid>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</guid>
+      <description>&lt;h1 id=&#34;updating-wazuh-manager-permissions-after-failed-upgrade&#34;&gt;Updating Wazuh Manager Permissions After Failed Upgrade&lt;/h1&gt;
+&lt;p&gt;If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.&lt;/p&gt;
+&lt;h2 id=&#34;permission-update-commands&#34;&gt;Permission Update Commands&lt;/h2&gt;
+&lt;p&gt;Run these commands to correct ownership:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change ossec user/group to wazuh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find /var/ossec -group ossec -user ossec -exec chown wazuh:wazuh &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change root-owned files to wazuh group&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find /var/ossec -group ossec -user root -exec chown root:wazuh &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;notes&#34;&gt;Notes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;These commands recursively update ownership in the Wazuh directory&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Running PowerShell Commands on a Wodle Wazuh</title>
       <link>//localhost:1313/docs/powershell-wodle/</link>

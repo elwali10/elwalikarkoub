@@ -26,7 +26,7 @@ docker-compose down --remove-orphans -v --rmi all
 
 ## 2. Run Image with Interactive Shell
 
-```
+```bash
 docker run -it --entrypoint bash wazuh/wazuh-certs-generator:0.0.1
 
 docker run -it --entrypoint bash ubuntu:focal
@@ -39,7 +39,7 @@ docker run -it --entrypoint bash ubuntu:focal
 
 ## 3. Find Container IP Address
 
-```
+```bash
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps | grep -i dashboard | awk '{print $1}')
 ```
 
@@ -53,7 +53,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(do
 
 ## 4. Build Custom Image
 
-```
+```bash
 docker build -t wazuh-dashboard-anomaly-detector:4.7.1 wazuh-dashboard/. --no-cache
 ```
 
@@ -61,7 +61,7 @@ docker build -t wazuh-dashboard-anomaly-detector:4.7.1 wazuh-dashboard/. --no-ca
 
 ## 5. Tag Image for Docker Hub
 
-```
+```bash
 docker tag wazuh-dashboard-anomaly-detector:4.7.1 elwali/wazuh-dashboard-anomaly-detector:4.7.1
 ```
 
@@ -69,7 +69,7 @@ docker tag wazuh-dashboard-anomaly-detector:4.7.1 elwali/wazuh-dashboard-anomaly
 
 ## 6. Push Image to Docker Hub
 
-```
+```bash
 docker push elwali/wazuh-dashboard-anomaly-detector:4.7.1
 ```
 
@@ -83,7 +83,7 @@ Make sure to meet the following requirements:
 
 ## 7. System Cleanup
 
-```
+```bash
 docker system prune
 ```
 It removes: 
@@ -98,7 +98,7 @@ It removes:
 
 More aggressive cleanup: 
 
-```
+```bash
 docker system prune -a --volumes
 ```
  - Removes all unused images and volumes
