@@ -202,6 +202,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Running PowerShell Commands on a Wodle Wazuh
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Running PowerShell Commands on a Wodle in Wazuh By executing PowerShell commands through a Wazuh Wodle and formatting the results in JSON, you can streamline log processing without the need for custom decoders. This method simplifies integration—only the corresponding rules need to be defined to handle the structured output effectively.
+PowerShell Command Format The recommended format for PowerShell commands in a Wodle is:
+Powershell -c &#34;@{ &lt;header&gt; = &lt;command&gt; } | ConvertTo-Json -compress&#34; &lt;command&gt; is the PowerShell cmdlet or one-liner script that outputs an object
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-12 23:09:38 +0100 +0100'>June 12, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Elwali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to Running PowerShell Commands on a Wodle Wazuh" href="/docs/powershell-wodle/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">My Essential Docker Commands Cheat Sheet
     </h2>
   </header>
