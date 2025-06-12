@@ -6,8 +6,22 @@
     <description>Recent content in Docs on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Jun 2025 18:35:36 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 23:09:38 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running PowerShell Commands on a Wodle Wazuh</title>
+      <link>//localhost:1313/docs/powershell-wodle/</link>
+      <pubDate>Thu, 12 Jun 2025 23:09:38 +0100</pubDate>
+      <guid>//localhost:1313/docs/powershell-wodle/</guid>
+      <description>&lt;h1 id=&#34;running-powershell-commands-on-a-wodle-in-wazuh&#34;&gt;Running PowerShell Commands on a Wodle in Wazuh&lt;/h1&gt;
+&lt;p&gt;By executing PowerShell commands through a Wazuh Wodle and formatting the results in JSON, you can streamline log processing without the need for custom decoders. This method simplifies integration—only the corresponding rules need to be defined to handle the structured output effectively.&lt;/p&gt;
+&lt;h2 id=&#34;powershell-command-format&#34;&gt;PowerShell Command Format&lt;/h2&gt;
+&lt;p&gt;The recommended format for PowerShell commands in a Wodle is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Powershell -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@{ &amp;lt;header&amp;gt; = &amp;lt;command&amp;gt; } | ConvertTo-Json -compress&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;command&amp;gt;&lt;/code&gt; is the PowerShell cmdlet or one-liner script that outputs an object&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My Essential Docker Commands Cheat Sheet</title>
       <link>//localhost:1313/docs/usefuldockercommands/</link>
