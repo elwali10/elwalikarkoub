@@ -134,7 +134,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Updating Wazuh Manager Permissions After Failed Upgrade If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.
+    <p>Updating Wazuh Manager Permissions After Failed Upgrade If your Wazuh manager upgrade fails due to permission issues, you may need to check the files permissions/ownership if they are still using the old ossec user/group.
 Permission Update Commands Run these commands to correct ownership:
 # Change ossec user/group to wazuh find /var/ossec -group ossec -user ossec -exec chown wazuh:wazuh {} \; # Change root-owned files to wazuh group find /var/ossec -group ossec -user root -exec chown root:wazuh {} \; Notes: These commands recursively update ownership in the Wazuh directory
 ...</p>

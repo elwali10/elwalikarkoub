@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Security | Elwali Karkoub</title>
+<title>Open Source | Elwali Karkoub</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Elwali Karkoub">
-<link rel="canonical" href="//localhost:1313/categories/security/">
+<link rel="canonical" href="//localhost:1313/tags/open-source/">
 <meta name="google-site-verification" content="G-6J8BPZMRPP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/assets/favicon.svg">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/categories/security/index.xml">
-<link rel="alternate" hreflang="en" href="//localhost:1313/categories/security/">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/open-source/index.xml">
+<link rel="alternate" hreflang="en" href="//localhost:1313/tags/open-source/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,13 +57,13 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="//localhost:1313/categories/security/">
+</noscript><meta property="og:url" content="//localhost:1313/tags/open-source/">
   <meta property="og:site_name" content="Elwali Karkoub">
-  <meta property="og:title" content="Security">
+  <meta property="og:title" content="Open Source">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Security">
+<meta name="twitter:title" content="Open Source">
 <meta name="twitter:description" content="">
 
 </head>
@@ -124,7 +124,7 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    Security
+    Open Source
   </h1>
 </header>
 
@@ -141,36 +141,6 @@ Launch Agents/Daemons Browser Extensions Cron Jobs Login Items Kernel Extensions
   </div>
   <footer class="entry-footer"><span title='2025-08-03 22:19:35 +0100 WEST'>August 3, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
   <a class="entry-link" aria-label="post link to KnockKnock : Reveal Persistent MacOS installed softwares" href="//localhost:1313/docs/knockknock-reveal-persistent/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Wazuh Upgrade Permissions Fix
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Updating Wazuh Manager Permissions After Failed Upgrade If your Wazuh manager upgrade fails due to permission issues, you may need to check the files permissions/ownership if they are still using the old ossec user/group.
-Permission Update Commands Run these commands to correct ownership:
-# Change ossec user/group to wazuh find /var/ossec -group ossec -user ossec -exec chown wazuh:wazuh {} \; # Change root-owned files to wazuh group find /var/ossec -group ossec -user root -exec chown root:wazuh {} \; Notes: These commands recursively update ownership in the Wazuh directory
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-06-12 23:56:46 +0100 WEST'>June 12, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
-  <a class="entry-link" aria-label="post link to Wazuh Upgrade Permissions Fix" href="//localhost:1313/docs/wazuh-upgrade-permissions-fix/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Running PowerShell Commands on a Wodle Wazuh
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Running PowerShell Commands on a Wodle in Wazuh By executing PowerShell commands through a Wazuh Wodle and formatting the results in JSON, you can streamline log processing without the need for custom decoders. This method simplifies integration—only the corresponding rules need to be defined to handle the structured output effectively.
-PowerShell Command Format The recommended format for PowerShell commands in a Wodle is:
-Powershell -c &#34;@{ &lt;header&gt; = &lt;command&gt; } | ConvertTo-Json -compress&#34; &lt;command&gt; is the PowerShell cmdlet or one-liner script that outputs an object
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-06-12 23:09:38 +0100 WEST'>June 12, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Elwali Karkoub</footer>
-  <a class="entry-link" aria-label="post link to Running PowerShell Commands on a Wodle Wazuh" href="//localhost:1313/docs/powershell-wodle/"></a>
 </article>
     </main>
     

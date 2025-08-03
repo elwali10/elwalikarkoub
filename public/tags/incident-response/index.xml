@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Incident Response on Elwali Karkoub</title>
+    <link>//localhost:1313/tags/incident-response/</link>
+    <description>Recent content in Incident Response on Elwali Karkoub</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Aug 2025 22:19:35 +0100</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/incident-response/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KnockKnock : Reveal Persistent MacOS installed softwares</title>
+      <link>//localhost:1313/docs/knockknock-reveal-persistent/</link>
+      <pubDate>Sun, 03 Aug 2025 22:19:35 +0100</pubDate>
+      <guid>//localhost:1313/docs/knockknock-reveal-persistent/</guid>
+      <description>&lt;p&gt;During a post-incident malware investigation, having fast and reliable tools is critical for uncovering persistent threats. I have recently came accross &lt;strong&gt;KnockKnock&lt;/strong&gt; tool which is a free, open-source macOS tool by Objective-See that uncovers persistently installed software-components.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;Once malware infects a system, it typically establishes persistence through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch Agents/Daemons&lt;/li&gt;
+&lt;li&gt;Browser Extensions&lt;/li&gt;
+&lt;li&gt;Cron Jobs&lt;/li&gt;
+&lt;li&gt;Login Items&lt;/li&gt;
+&lt;li&gt;Kernel Extensions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;KnockKnock automates detection of these persistence mechanisms, providing visibility into what&amp;rsquo;s set to automatically execute on your Mac.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -14,7 +14,7 @@
       <pubDate>Thu, 12 Jun 2025 23:56:46 +0100</pubDate>
       <guid>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</guid>
       <description>&lt;h1 id=&#34;updating-wazuh-manager-permissions-after-failed-upgrade&#34;&gt;Updating Wazuh Manager Permissions After Failed Upgrade&lt;/h1&gt;
-&lt;p&gt;If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.&lt;/p&gt;
+&lt;p&gt;If your Wazuh manager upgrade fails due to permission issues, you may need to check the files permissions/ownership if they are still using the old ossec user/group.&lt;/p&gt;
 &lt;h2 id=&#34;permission-update-commands&#34;&gt;Permission Update Commands&lt;/h2&gt;
 &lt;p&gt;Run these commands to correct ownership:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change ossec user/group to wazuh&lt;/span&gt;

@@ -6,15 +6,32 @@
     <description>Recent content in Security on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 23:56:46 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 22:19:35 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KnockKnock : Reveal Persistent MacOS installed softwares</title>
+      <link>//localhost:1313/docs/knockknock-reveal-persistent/</link>
+      <pubDate>Sun, 03 Aug 2025 22:19:35 +0100</pubDate>
+      <guid>//localhost:1313/docs/knockknock-reveal-persistent/</guid>
+      <description>&lt;p&gt;During a post-incident malware investigation, having fast and reliable tools is critical for uncovering persistent threats. I have recently came accross &lt;strong&gt;KnockKnock&lt;/strong&gt; tool which is a free, open-source macOS tool by Objective-See that uncovers persistently installed software-components.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;Once malware infects a system, it typically establishes persistence through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch Agents/Daemons&lt;/li&gt;
+&lt;li&gt;Browser Extensions&lt;/li&gt;
+&lt;li&gt;Cron Jobs&lt;/li&gt;
+&lt;li&gt;Login Items&lt;/li&gt;
+&lt;li&gt;Kernel Extensions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;KnockKnock automates detection of these persistence mechanisms, providing visibility into what&amp;rsquo;s set to automatically execute on your Mac.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Wazuh Upgrade Permissions Fix</title>
       <link>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</link>
       <pubDate>Thu, 12 Jun 2025 23:56:46 +0100</pubDate>
       <guid>//localhost:1313/docs/wazuh-upgrade-permissions-fix/</guid>
       <description>&lt;h1 id=&#34;updating-wazuh-manager-permissions-after-failed-upgrade&#34;&gt;Updating Wazuh Manager Permissions After Failed Upgrade&lt;/h1&gt;
-&lt;p&gt;If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.&lt;/p&gt;
+&lt;p&gt;If your Wazuh manager upgrade fails due to permission issues, you may need to check the files permissions/ownership if they are still using the old ossec user/group.&lt;/p&gt;
 &lt;h2 id=&#34;permission-update-commands&#34;&gt;Permission Update Commands&lt;/h2&gt;
 &lt;p&gt;Run these commands to correct ownership:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change ossec user/group to wazuh&lt;/span&gt;

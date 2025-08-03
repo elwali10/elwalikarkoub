@@ -202,11 +202,26 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">KnockKnock : Reveal Persistent MacOS installed softwares
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>During a post-incident malware investigation, having fast and reliable tools is critical for uncovering persistent threats. I have recently came accross KnockKnock tool which is a free, open-source macOS tool by Objective-See that uncovers persistently installed software-components.
+Why It Matters Once malware infects a system, it typically establishes persistence through:
+Launch Agents/Daemons Browser Extensions Cron Jobs Login Items Kernel Extensions KnockKnock automates detection of these persistence mechanisms, providing visibility into what’s set to automatically execute on your Mac.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-03 22:19:35 +0100 WEST'>August 3, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Elwali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to KnockKnock : Reveal Persistent MacOS installed softwares" href="//localhost:1313/docs/knockknock-reveal-persistent/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Wazuh Upgrade Permissions Fix
     </h2>
   </header>
   <div class="entry-content">
-    <p>Updating Wazuh Manager Permissions After Failed Upgrade If your Wazuh manager upgrade fails due to permission issues, you may need to update the file ownerships.
+    <p>Updating Wazuh Manager Permissions After Failed Upgrade If your Wazuh manager upgrade fails due to permission issues, you may need to check the files permissions/ownership if they are still using the old ossec user/group.
 Permission Update Commands Run these commands to correct ownership:
 # Change ossec user/group to wazuh find /var/ossec -group ossec -user ossec -exec chown wazuh:wazuh {} \; # Change root-owned files to wazuh group find /var/ossec -group ossec -user root -exec chown root:wazuh {} \; Notes: These commands recursively update ownership in the Wazuh directory
 ...</p>
