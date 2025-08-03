@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 23:56:46 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 22:19:35 +0100</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Incident Response</title>
+      <link>/tags/incident-response/</link>
+      <pubDate>Sun, 03 Aug 2025 22:19:35 +0100</pubDate>
+      <guid>/tags/incident-response/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>/tags/open-source/</link>
+      <pubDate>Sun, 03 Aug 2025 22:19:35 +0100</pubDate>
+      <guid>/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>/tags/security/</link>
+      <pubDate>Sun, 03 Aug 2025 22:19:35 +0100</pubDate>
+      <guid>/tags/security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
       <link>/tags/linux/</link>
@@ -34,13 +55,6 @@
       <link>/tags/powershell/</link>
       <pubDate>Thu, 12 Jun 2025 23:09:38 +0100</pubDate>
       <guid>/tags/powershell/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>/tags/security/</link>
-      <pubDate>Thu, 12 Jun 2025 23:09:38 +0100</pubDate>
-      <guid>/tags/security/</guid>
       <description></description>
     </item>
     <item>

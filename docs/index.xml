@@ -6,8 +6,25 @@
     <description>Recent content in Docs on Elwali Karkoub</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 23:56:46 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 22:19:35 +0100</lastBuildDate>
     <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KnockKnock : Reveal Persistent MacOS installed softwares</title>
+      <link>/docs/knockknock-reveal-persistent/</link>
+      <pubDate>Sun, 03 Aug 2025 22:19:35 +0100</pubDate>
+      <guid>/docs/knockknock-reveal-persistent/</guid>
+      <description>&lt;p&gt;During a post-incident malware investigation, having fast and reliable tools is critical for uncovering persistent threats. I have recently came accross &lt;strong&gt;KnockKnock&lt;/strong&gt; tool which is a free, open-source macOS tool by Objective-See that uncovers persistently installed software-components.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;Once malware infects a system, it typically establishes persistence through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch Agents/Daemons&lt;/li&gt;
+&lt;li&gt;Browser Extensions&lt;/li&gt;
+&lt;li&gt;Cron Jobs&lt;/li&gt;
+&lt;li&gt;Login Items&lt;/li&gt;
+&lt;li&gt;Kernel Extensions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;KnockKnock automates detection of these persistence mechanisms, providing visibility into what&amp;rsquo;s set to automatically execute on your Mac.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Wazuh Upgrade Permissions Fix</title>
       <link>/docs/wazuh-upgrade-permissions-fix/</link>
