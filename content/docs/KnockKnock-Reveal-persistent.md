@@ -11,8 +11,7 @@ categories:
 ---
 
 
-During a post-incident malware investigation, having fast and reliable tools is critical for uncovering persistent threats. I have recently came accross **KnockKnock** tool which is a free, open-source macOS tool by Objective-See that uncovers persistently installed software-components.
-
+In post-incident malware investigations, fast and reliable tools are critical for uncovering persistence mechanisms. One such tool I recently discovered is KnockKnock—a free, open-source utility by Objective-See that reveals persistently installed software components on macOS
 
 
 ## Why It Matters
