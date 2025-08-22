@@ -130,6 +130,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Azure Signing Logs Missing from Wazuh Dashboard
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Issue Description Azure sign-in logs (auditLogs/signIns) are processed by Wazuh manager and visible in alerts, but they don’t appear in the Wazuh Dashboard. This happens due to a field mapping conflict.
+The Error { &#34;type&#34;: &#34;mapper_parsing_exception&#34;, &#34;reason&#34;: &#34;failed to parse field [data.ms-graph.status] of type [keyword]&#34; } Root Cause The status field in Azure logs contains a JSON object, but the Wazuh template expects it to be a keyword string.
+Solution Temporary Fix Edit the Wazuh template: sudo nano /etc/filebeat/wazuh-template.json Find the ms-graph section and update the status field: &#34;ms-graph&#34;: { &#34;properties&#34;: { &#34;relationship&#34;: { &#34;type&#34;: &#34;keyword&#34; }, &#34;status&#34;: { &#34;type&#34;: &#34;object&#34;, &#34;dynamic&#34;: true } } } Apply the template: filebeat setup --index-management -E setup.template.json.enabled=false Restart Filebeat: sudo systemctl restart filebeat Permanent Fix A permanent fix will be available in Wazuh 4.14 based on this PR: https://github.com/wazuh/wazuh/pull/30831
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-22 10:00:00 +0200 +0200'>August 22, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;ElWali Karkoub</footer>
+  <a class="entry-link" aria-label="post link to Azure Signing Logs Missing from Wazuh Dashboard" href="/docs/azure-signing-logs/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">KnockKnock : Reveal Persistent MacOS installed softwares
     </h2>
   </header>
